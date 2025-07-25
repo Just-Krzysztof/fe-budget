@@ -8,22 +8,81 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <section className="bg-white lg:grid lg:h-screen lg:place-content-center">
+        <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+          <div className="mx-auto max-w-prose text-center">
+            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+              Understand user flow and
+              <strong className="text-indigo-600"> increase </strong>
+              conversions
+            </h1>
+
+            <p className="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nisi. Natus,
+              provident accusamus impedit minima harum corporis iusto.
+            </p>
+
+            <div className="mt-4 flex justify-center gap-4 sm:mt-6">
+              <a
+                className="inline-block rounded border border-indigo-600 bg-indigo-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-indigo-700"
+                href="#"
+              >
+                Get Started
+              </a>
+
+              <a
+                className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900"
+                href="#"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div role="alert" className="rounded-md border border-gray-300 bg-white p-4 shadow-sm">
+        <div className="flex items-start gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="size-6 text-green-600"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+
+          <div className="flex-1">
+            <strong className="font-medium text-gray-900"> Changes saved </strong>
+
+            <p className="mt-0.5 text-sm text-gray-700">Your product changes have been saved.</p>
+          </div>
+
+          <button
+            className="-m-3 rounded-full p-1.5 text-gray-500 transition-colors hover:bg-gray-50 hover:text-gray-700"
+            type="button"
+            aria-label="Dismiss alert"
+          >
+            <span className="sr-only">Dismiss popup</span>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="size-5"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </>
   );
 }
