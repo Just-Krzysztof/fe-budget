@@ -1,8 +1,13 @@
+import { Smile } from 'lucide-react';
+
 export default function App() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-900 font-sans p-8">
       <div role="alert" className="border-s-4 border-red-700 bg-red-50 p-4">
         <div className="flex items-center gap-2 text-red-700">
+          <div className="app">
+            <Smile color="#3e9392" />
+          </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
