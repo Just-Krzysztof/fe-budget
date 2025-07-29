@@ -1,4 +1,5 @@
 import React from 'react';
+import { SideBar } from './SideBar';
 
 type MainLayoutProps = {
   children: React.ReactNode;
@@ -6,8 +7,11 @@ type MainLayoutProps = {
 
 export default function MainLayout({ children }: MainLayoutProps) {
   return (
-    <main className="min-h-screen w-full bg-gray-50 p-4 font-sans text-gray-900 sm:p-6 md:p-8">
-      <div className="mx-auto max-w-screen-xl">{children}</div>
-    </main>
+    <div className="min-h-screen w-ful flex ">
+      <SideBar></SideBar>
+      <main className="bg-gray-50 p-4 w-full font-sans text-gray-900 sm:p-6 md:p-8">
+        <div className="mx-auto max-w-screen-xl">{children}</div>
+      </main>
+    </div>
   );
 }
