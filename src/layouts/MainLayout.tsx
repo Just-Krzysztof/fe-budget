@@ -5,7 +5,7 @@ type MainLayoutProps = {
   children: React.ReactNode;
 };
 
-export default function MainLayout({ children }: MainLayoutProps) {
+export const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <div className="min-h-screen w-ful flex ">
       <SideBar></SideBar>
@@ -14,4 +14,4 @@ export default function MainLayout({ children }: MainLayoutProps) {
       </main>
     </div>
   );
-}
+};
