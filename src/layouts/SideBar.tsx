@@ -3,7 +3,7 @@ import { Home, BanknoteArrowDown, Landmark, PiggyBank } from 'lucide-react';
 
 const navLinks = [
   { to: '/dashboard', icon: <Home />, label: 'Dashboard' },
-  { to: '/transaction', icon: <BanknoteArrowDown />, label: 'Transactions' },
+  { to: '/transactions', icon: <BanknoteArrowDown />, label: 'Transactions' },
   { to: '/accounts', icon: <Landmark />, label: 'Accounts' },
   { to: '/budget', icon: <PiggyBank />, label: 'Budget' },
 ];

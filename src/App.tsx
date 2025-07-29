@@ -4,6 +4,9 @@ import { AuthLayout } from './layouts/AuthLayout';
 import { HomePage } from './pages/HomePage';
 import { LoginPage } from './pages/Auth/LoginPage';
 import { RegisterPage } from './pages/Auth/RegisterPage';
+import { TransactionsPage } from './pages/TransactionsPage';
+import { AccountsPage } from './pages/AccountsPage';
+import { BudgetPage } from './pages/BudgetPage';
 
 const AppLayout = () => (
   <MainLayout>
@@ -22,6 +25,9 @@ export default function App() {
     <Routes>
       <Route element={<AppLayout />}>
         <Route path="/dashboard" element={<HomePage />} />
+        <Route path="/transactions" element={<TransactionsPage />} />
+        <Route path="/accounts" element={<AccountsPage />} />
+        <Route path="/budget" element={<BudgetPage />} />
       </Route>
 
       <Route path="/auth" element={<AuthenticationLayout />}>
