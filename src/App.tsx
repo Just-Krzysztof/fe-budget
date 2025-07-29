@@ -1,156 +1,8 @@
-import { Smile } from 'lucide-react';
+import MainLayout from './layouts/MainLayout';
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-900 font-sans p-8">
-      <div role="alert" className="border-s-4 border-red-700 bg-red-50 p-4">
-        <div className="flex items-center gap-2 text-red-700">
-          <div className="app">
-            <Smile color="#3e9392" />
-          </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="size-5"
-          >
-            <path
-              fillRule="evenodd"
-              d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
-              clipRule="evenodd"
-            />
-          </svg>
-
-          <strong className="font-medium"> Something went wrong </strong>
-        </div>
-
-        <p className="mt-2 text-sm text-red-700">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quasi assumenda numquam
-          deserunt consectetur autem nihil quos debitis dolor culpa.
-        </p>
-      </div>
-      <div className="flow-root">
-        <dl className="-my-3 divide-y divide-gray-200 text-sm *:even:bg-gray-50">
-          <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
-            <dt className="font-medium text-gray-900">Title</dt>
-
-            <dd className="text-gray-700 sm:col-span-2">Mr</dd>
-          </div>
-
-          <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
-            <dt className="font-medium text-gray-900">Name</dt>
-
-            <dd className="text-gray-700 sm:col-span-2">John Frusciante</dd>
-          </div>
-
-          <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
-            <dt className="font-medium text-gray-900">Occupation</dt>
-
-            <dd className="text-gray-700 sm:col-span-2">Guitarist</dd>
-          </div>
-
-          <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
-            <dt className="font-medium text-gray-900">Salary</dt>
-
-            <dd className="text-gray-700 sm:col-span-2">$1,000,000+</dd>
-          </div>
-
-          <div className="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
-            <dt className="font-medium text-gray-900">Bio</dt>
-
-            <dd className="text-gray-700 sm:col-span-2">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et facilis debitis explicabo
-              doloremque impedit nesciunt dolorem facere, dolor quasi veritatis quia fugit aperiam
-              aspernatur neque molestiae labore aliquam soluta architecto?
-            </dd>
-          </div>
-        </dl>
-      </div>
-      <label htmlFor="Email" className="relative">
-        <input
-          type="email"
-          id="Email"
-          placeholder=""
-          className="peer mt-0.5 w-full rounded border-gray-300 shadow-sm sm:text-sm"
-        />
-
-        <span className="absolute inset-y-0 start-3 -translate-y-5 bg-white px-0.5 text-sm font-medium text-gray-700 transition-transform peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-5">
-          Email
-        </span>
-      </label>
-      <div>
-        <h2 className="sr-only">Steps</h2>
-
-        <div>
-          <div className="overflow-hidden rounded-full bg-gray-200">
-            <div className="h-2 w-1/2 rounded-full bg-blue-500"></div>
-          </div>
-
-          <ol className="mt-4 grid grid-cols-3 text-sm font-medium text-gray-500">
-            <li className="flex items-center justify-start text-blue-600 sm:gap-1.5">
-              <span className="hidden sm:inline"> Details </span>
-
-              <svg
-                className="size-6 sm:size-5"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
-                />
-              </svg>
-            </li>
-
-            <li className="flex items-center justify-center text-blue-600 sm:gap-1.5">
-              <span className="hidden sm:inline"> Address </span>
-
-              <svg
-                className="size-6 sm:size-5"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-              </svg>
-            </li>
-
-            <li className="flex items-center justify-end sm:gap-1.5">
-              <span className="hidden sm:inline"> Payment </span>
-
-              <svg
-                className="size-6 sm:size-5"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
-                />
-              </svg>
-            </li>
-          </ol>
-        </div>
-      </div>
+    <MainLayout>
       <header className="bg-white">
         <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
           <a className="block text-teal-600" href="#">
@@ -244,6 +96,109 @@ export default function App() {
           </div>
         </div>
       </header>
-    </main>
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+          <header>
+            <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Product Collection</h2>
+
+            <p className="mt-4 max-w-md text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque
+              iure dicta incidunt est ipsam, officia dolor fugit natus?
+            </p>
+          </header>
+
+          <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <li>
+              <a href="#" className="group block overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  alt=""
+                  className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                />
+
+                <div className="relative bg-white pt-3">
+                  <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                    Basic Tee
+                  </h3>
+
+                  <p className="mt-2">
+                    <span className="sr-only"> Regular Price </span>
+
+                    <span className="tracking-wider text-gray-900"> £24.00 GBP </span>
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" className="group block overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  alt=""
+                  className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                />
+
+                <div className="relative bg-white pt-3">
+                  <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                    Basic Tee
+                  </h3>
+
+                  <p className="mt-2">
+                    <span className="sr-only"> Regular Price </span>
+
+                    <span className="tracking-wider text-gray-900"> £24.00 GBP </span>
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" className="group block overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  alt=""
+                  className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                />
+
+                <div className="relative bg-white pt-3">
+                  <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                    Basic Tee
+                  </h3>
+
+                  <p className="mt-2">
+                    <span className="sr-only"> Regular Price </span>
+
+                    <span className="tracking-wider text-gray-900"> £24.00 GBP </span>
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" className="group block overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  alt=""
+                  className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                />
+
+                <div className="relative bg-white pt-3">
+                  <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                    Basic Tee
+                  </h3>
+
+                  <p className="mt-2">
+                    <span className="sr-only"> Regular Price </span>
+
+                    <span className="tracking-wider text-gray-900"> £24.00 GBP </span>
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <h1 className="text-2xl font-bold">Hello, world!</h1>
+    </MainLayout>
   );
 }
