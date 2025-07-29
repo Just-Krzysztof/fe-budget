@@ -21,7 +21,7 @@ export default function App() {
   return (
     <Routes>
       <Route element={<AppLayout />}>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/dashboard" element={<HomePage />} />
       </Route>
 
       <Route path="/auth" element={<AuthenticationLayout />}>
