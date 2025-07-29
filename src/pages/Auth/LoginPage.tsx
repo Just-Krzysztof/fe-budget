@@ -1,6 +1,8 @@
+import { CircleArrowRight } from 'lucide-react';
+
 export const LoginPage = () => {
   return (
-    <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-md">
+    <div className="w-full max-w-xl rounded-xl bg-white p-8 shadow-md">
       <h2 className="mb-6 text-center text-2xl font-bold">Login</h2>
       <form>
         <div className="mb-4">
@@ -25,12 +27,20 @@ export const LoginPage = () => {
             placeholder="********"
           />
         </div>
-        <button
-          className="w-full rounded-md bg-blue-600 px-4 py-2 font-bold text-white hover:bg-blue-700"
-          type="submit"
-        >
-          Sign In
-        </button>
+        <div className="flex justify-end">
+          <button
+            type="submit"
+            className="group relative inline-flex items-center overflow-hidden rounded-md bg-blue-600 px-8 py-3 font-bold text-white focus:outline-none focus:ring active:bg-blue-500"
+          >
+            <span className="absolute inset-0 flex items-center justify-center -translate-x-full transition-transform duration-600 group-hover:translate-x-0 ">
+              <CircleArrowRight />
+            </span>
+
+            <span className="transition-all group-hover:translate-x-full group-hover:opacity-0">
+              Sign in
+            </span>
+          </button>
+        </div>
       </form>
     </div>
   );
