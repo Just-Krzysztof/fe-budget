@@ -29,7 +29,7 @@ export const PieChart = ({ data }: PieChartProps) => {
   return (
     <div className="flex items-center gap-4">
       <div
-        className=" w-24 aspect-square rounded-full"
+        className=" w-20 aspect-square rounded-full"
         style={gradientStyle}
         role="img"
         aria-label="Pie chart"
