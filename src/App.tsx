@@ -3,6 +3,7 @@ import { MainLayout } from './layouts/MainLayout';
 import { AuthLayout } from './layouts/AuthLayout';
 import { HomePage } from './pages/HomePage';
 import { LoginPage } from './pages/Auth/LoginPage';
+import { RegisterPage } from './pages/Auth/RegisterPage';
 
 const AppLayout = () => (
   <MainLayout>
@@ -26,6 +27,7 @@ export default function App() {
       <Route path="/auth" element={<AuthenticationLayout />}>
         <Route index element={<LoginPage />} />
         <Route path="login" element={<LoginPage />} />
+        <Route path="register" element={<RegisterPage />} />
       </Route>
     </Routes>
   );
