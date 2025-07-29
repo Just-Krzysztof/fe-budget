@@ -1,5 +1,6 @@
 import { TrendingUp, TrendingDown, CircleDollarSign } from 'lucide-react';
 import { PieChart } from '../components/PieChart';
+import { LineChart } from '../components/LineChart';
 
 const pieChartData = [
   { value: 12, color: 'rgba(255, 99, 132, 1)', label: 'Income' },
@@ -9,6 +10,47 @@ const pieChartData = [
 const pieChartData2 = [
   { value: 200, color: 'rgba(255, 99, 132, 1)', label: 'Income' },
   { value: 190, color: 'rgba(54, 162, 235, 1)', label: 'Expenses' },
+];
+
+// Corrected line chart data
+const lineChartIncome = [
+  { value: 150, label: '2025-07-16' },
+  { value: 260, label: '2025-07-17' },
+  { value: 340, label: '2025-07-18' },
+  { value: 160, label: '2025-07-19' },
+  { value: 260, label: '2025-07-20' },
+  { value: 360, label: '2025-07-21' },
+  { value: 260, label: '2025-07-22' },
+  { value: 260, label: '2025-07-23' },
+  { value: 360, label: '2025-07-24' },
+  { value: 160, label: '2025-07-25' },
+  { value: 360, label: '2025-07-26' },
+];
+const lineChartExpenses = [
+  { value: 350, label: '2025-07-16' },
+  { value: 260, label: '2025-07-17' },
+  { value: 940, label: '2025-07-18' },
+  { value: 860, label: '2025-07-19' },
+  { value: 760, label: '2025-07-20' },
+  { value: 660, label: '2025-07-21' },
+  { value: 560, label: '2025-07-22' },
+  { value: 460, label: '2025-07-23' },
+  { value: 360, label: '2025-07-24' },
+  { value: 260, label: '2025-07-25' },
+  { value: 160, label: '2025-07-26' },
+];
+const lineChartSave = [
+  { value: 50, label: '2025-07-16' },
+  { value: 60, label: '2025-07-17' },
+  { value: 40, label: '2025-07-18' },
+  { value: 60, label: '2025-07-19' },
+  { value: 60, label: '2025-07-20' },
+  { value: 60, label: '2025-07-21' },
+  { value: 60, label: '2025-07-22' },
+  { value: 60, label: '2025-07-23' },
+  { value: 60, label: '2025-07-24' },
+  { value: 60, label: '2025-07-25' },
+  { value: 60, label: '2025-07-26' },
 ];
 
 export const HomePage = () => {
@@ -50,8 +92,26 @@ export const HomePage = () => {
           </div>
         </article>
       </div>
-      <div className="w-full"></div>
+      <div className="w-full flex flex-col mt-4">
+        <div className="md:w-[50%]">s</div>
+        <div className="md:w-[50%]">
+          <LineChart
+            incomeData={lineChartIncome}
+            expensesData={lineChartExpenses}
+            saveData={lineChartSave}
+            maxRecords={10}
+          />
+        </div>
+      </div>
       <div className="w-full bg-slate-400">section 50% / 50%</div>
+      {/* <div className="mt-4 w-full">
+        <LineChart
+          incomeData={lineChartIncome}
+          expensesData={lineChartExpenses}
+          saveData={lineChartSave}
+          maxRecords={20}
+        />
+      </div> */}
     </>
   );
 };
