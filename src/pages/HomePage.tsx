@@ -1,4 +1,4 @@
-import { TrendingUp, TrendingDown, CircleDollarSign } from 'lucide-react';
+import { TrendingUp, TrendingDown, CircleDollarSign, CreditCard } from 'lucide-react';
 import { PieChart } from '../components/PieChart';
 import { LineChart } from '../components/LineChart';
 
@@ -94,70 +94,41 @@ export const HomePage = () => {
       </div>
       <div className="w-full flex flex-col md:flex-row mt-4 gap-4">
         <div className="md:w-[50%]">
-          <article className="rounded-xl border border-gray-700 bg-gray-800 p-4">
+          <article className="rounded-lg border border-gray-100 w-full bg-white p-6 ">
             <div className="flex items-center gap-4">
-              <img
-                alt=""
-                src="https://images.unsplash.com/photo-1614644147724-2d4785d69962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
-                className="size-16 rounded-full object-cover"
-              />
-
+              <CreditCard className="w-[45px]" />
               <div>
-                <h3 className="text-lg font-medium text-white">Claire Mac</h3>
-
-                <div className="flow-root">
-                  <ul className="-m-1 flex flex-wrap">
-                    <li className="p-1 leading-none">
-                      <a href="#" className="text-xs font-medium text-gray-300">
-                        {' '}
-                        Twitter{' '}
-                      </a>
-                    </li>
-
-                    <li className="p-1 leading-none">
-                      <a href="#" className="text-xs font-medium text-gray-300">
-                        {' '}
-                        GitHub{' '}
-                      </a>
-                    </li>
-
-                    <li className="p-1 leading-none">
-                      <a href="#" className="text-xs font-medium text-gray-300">
-                        Website
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <h3 className="text-lg font-medium">Bank Accounts</h3>
               </div>
             </div>
 
-            <ul className="mt-4 space-y-2">
-              <li>
-                <a
-                  href="#"
-                  className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600"
-                >
-                  <strong className="font-medium text-white">Project A</strong>
+            <ul className="space-y-2">
+              <li className="flex justify-between items-center border-b-2 p-2">
+                <strong className="font-medium text-gray-500 text-md">Project A</strong>
 
-                  <p className="mt-1 text-xs font-medium text-gray-300">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consequuntur
-                    deleniti, unde ab ut in!
-                  </p>
-                </a>
+                <div className="text-xs text-gray-400">
+                  <span>90.24zł</span>
+                  <br />
+                  <span>PLN-zł</span>
+                </div>
               </li>
+              <li className="flex justify-between items-center border-b-2 p-2">
+                <strong className="font-medium text-gray-500">Project A</strong>
 
-              <li>
-                <a
-                  href="#"
-                  className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600"
-                >
-                  <strong className="font-medium text-white">Project B</strong>
+                <div className="text-xs text-gray-400">
+                  <span>90.24zł</span>
+                  <br />
+                  <span>PLN-zł</span>
+                </div>
+              </li>
+              <li className="flex justify-between items-center border-b-2 p-2">
+                <strong className="font-medium text-gray-500">Project A</strong>
 
-                  <p className="mt-1 text-xs font-medium text-gray-300">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cumque saepe
-                    sit.
-                  </p>
-                </a>
+                <div className="text-xs text-gray-400">
+                  <span>90.24zł</span>
+                  <br />
+                  <span>PLN-zł</span>
+                </div>
               </li>
             </ul>
           </article>
@@ -172,14 +143,6 @@ export const HomePage = () => {
         </div>
       </div>
       <div className="w-full bg-slate-400">section 50% / 50%</div>
-      {/* <div className="mt-4 w-full">
-        <LineChart
-          incomeData={lineChartIncome}
-          expensesData={lineChartExpenses}
-          saveData={lineChartSave}
-          maxRecords={20}
-        />
-      </div> */}
     </>
   );
 };
